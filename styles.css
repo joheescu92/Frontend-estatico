@@ -1,0 +1,255 @@
+
+.container{
+    background-color: #89004f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo-AP{
+    width: 150px;
+}
+
+img{
+    width: 50px;
+}
+
+button{
+    margin: 10px
+}
+
+.banner{
+    background-color: #ca629c;
+    height: 350px;
+    text-align: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 70px;
+    line-height: 320px;
+}
+
+/*- about -*/
+#about{
+    padding: 20px;
+    background-color: #89004f;
+    text-align: center;
+    color: white;
+}
+#nombre{ 
+    font-weight: bold;
+    margin-top: 40%;
+    margin-left: 10px; 
+}
+
+@media (min-device-width: 576px){
+    #fotoperfil{
+        position: absolute;
+        width: 15%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px grey;
+        left: 2%;
+        top:400px;
+    }
+}
+
+@media (max-device-width: 575px){
+     #fotoperfil{
+        position: absolute;
+        width: 30%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px grey;
+        left: 33%;
+        top:400px;
+    } 
+}
+/*-Educacion-*/
+
+#educacion{
+    padding: 20px;
+    background-color: #eb2799;
+    color: white;
+}
+
+#educacion h1,h3{
+    display: inline;
+}
+
+/*-Proyectos-*/
+
+#proyectos{
+    padding: 20px;
+    background-color: #eb2799;
+    color: white;
+}
+
+
+#proyectos h1,h3{
+    display: inline;
+}
+
+/*- habilidades-*/
+#all{
+    display: flex;
+    background-color:#eb2799;
+    
+}
+
+#all h1{
+    padding: 35px;
+    color: white;
+}
+
+@media only screen and (max-width: 500px){
+    .all{
+        display: inline;
+    }
+}
+
+.all{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-color: #eb2799;
+
+  }
+  .circle-wrap {
+    display: grid;
+    grid-template-columns: repeat(1, 160px);
+    grid-gap: 80px;
+    margin-top: 75px;
+    margin-left: 50px;
+    margin-bottom:  30px;
+    width: 150px;
+    height: 150px;
+    background: #d9d7da;
+    border-radius: 50%;
+  }
+  
+  .circle-wrap .circle .mask,
+  .circle-wrap .circle .fill-1,
+  .circle-wrap .circle .fill-2,
+  .circle-wrap .circle .fill-3 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+  }
+  
+  .circle-wrap .circle .mask {
+    clip: rect(0px, 150px, 150px, 75px);
+  }
+  
+  .circle-wrap .inside-circle {
+    width: 124px;
+    height: 124px;
+    border-radius: 50%;
+    background: #212020;
+    line-height: 120px;
+    text-align: center;
+    margin-top: 13px;
+    margin-left: 13px;
+    color: white;
+    position: absolute;
+    z-index: 100;
+    font-weight: 700;
+    font-size: 2em;
+  }
+  
+  /* color animation */
+  
+  .mask .fill-1 {
+    clip: rect(0px, 175px, 150px, 0px);
+    background-color: #ec0c0c;
+  }
+  
+  .mask.full-1,
+  .circle .fill-1 {
+    animation: fill-1 ease-in-out 3s;
+    transform: rotate(180deg);
+  }
+  
+  @keyframes fill-1 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(180deg);
+    }
+  }
+  #img{
+    width: 75px;
+    height: 75px;
+  }
+  #hab{
+    color: white;
+    background-color: #eb2799;
+    padding: 0px;
+    margin: 0px;
+  }
+  /* 2nd bar */
+  
+  .mask .fill-2 {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: yellow;
+  }
+  
+  .mask.full-2,
+  .circle .fill-2 {
+    animation: fill-2 ease-in-out 3s;
+    transform: rotate(167deg);
+  }
+  
+  @keyframes fill-2{
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(167deg);
+    }
+  }
+  
+  /* 3rd progress bar */
+  .mask .fill-3 {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #23b9ea;
+  }
+  
+  .mask.full-3,
+  .circle .fill-3 {
+    animation: fill-3 ease-in-out 3s;
+    transform: rotate(135deg);
+  }
+  
+  @keyframes fill-3{
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(135deg);
+    }
+  }
+
+ /*-FOOTER-*/
+ footer{
+    
+    color: #fefefe;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 2px -2px 5px #999;
+    background-color: #eb2799;
+}
+ 
+/*-- responsive --*/
+@media (max-device-width:575px){
+.container{
+    flex-direction: column;
+}
+.redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+}
+
